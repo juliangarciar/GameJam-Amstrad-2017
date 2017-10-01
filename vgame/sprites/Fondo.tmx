@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="5" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="EdificiosFondo" tilewidth="16" tileheight="16" tilecount="12">
+  <image source="EdificiosFondo.png" width="192" height="16"/>
+ </tileset>
+ <tileset firstgid="13" name="Fondo" tilewidth="16" tileheight="16" tilecount="4">
+  <image source="Fondo.png" width="64" height="16"/>
+ </tileset>
+ <tileset firstgid="17" name="NinioAbaho" tilewidth="16" tileheight="16" tilecount="8">
+  <image source="NinioAbaho.png" width="128" height="16"/>
+ </tileset>
+ <tileset firstgid="25" name="NinioArriba" tilewidth="16" tileheight="16" tilecount="8">
+  <image source="NinioArriba.png" width="128" height="16"/>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="10" height="5">
+  <data encoding="base64" compression="zlib">
+   eJzjZGBg4MSDuaEYxOZC4nOj8WHyrEDMBsTsQMyBh88IxExAzAzELHj4AkRiAKjUAbw=
+  </data>
+ </layer>
+</map>
