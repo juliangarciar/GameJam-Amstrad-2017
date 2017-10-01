@@ -33,13 +33,13 @@ hudUpdate::
 
 	ret
 updateGround::
-	ld 		hl, #0xCDF0
+	ld 		hl, #0xCEE0
 		drawing:
 		ld 		a, #0xFF
 		ld 		(hl), a
 		inc 	hl
 		ld 		a, l
-		sub 	#0x40
+		sub 	#0x30
 		jr 		nz, drawing
 	ret
 ;Destroys 
@@ -50,6 +50,7 @@ incPoints::
 
 	inc 	a
 	ld 		(counter0), a
+
 	ret
 	incPoints1::
 		ld 		a, #0x30

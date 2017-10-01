@@ -5,14 +5,14 @@
 ;ARRAYS INFO
 ;MAYBE THERE'S NO NEED FOR GLOBALS
 enemy1_x:: .db #0
-enemy1_y:: .db #60
+enemy1_y:: .db #100
 enemy1_width:: .db #0x02
 enemy1_heigth:: .db #0x02
 enemy1_alive: .db #1
 enemy1_dir: .db #1
 
 enemy2_x:: .db #0x9F
-enemy2_y:: .db #70
+enemy2_y:: .db #110
 enemy2_width:: .db #0x02
 enemy2_heigth:: .db #0x02
 enemy2_alive: .db #1

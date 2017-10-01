@@ -56,7 +56,7 @@
 
 	;main character data
 	hero_x:: .db #60
-	hero_y:: .db #80
+	hero_y:: .db #160
 	hero_x_size:: .db #0x04
 	hero_y_size:: .db #0x08
 	hero_jump: .db #-1		;initially, it's not jumping

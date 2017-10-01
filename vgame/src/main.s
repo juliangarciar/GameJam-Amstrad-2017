@@ -112,6 +112,7 @@
 		sub 	#0xFF
 		jr 		nz, working
 		call 	loadHud
+		call 	updateGround
 		jr 		_main_bucle
 		ret
 
@@ -139,29 +140,27 @@
 			call draw_hero		;Erasing the hero
 
 			ld a, #0x00
-			call drawBox 		;Erase testing box
-			call moveBox		;move testBox
+			;call drawBox 		;Erase testing box
+			;call moveBox		;move testBox
 
 			;======
 			;NUEVO|
 			;======
+			
+			call shootUpdate
 			call updateEnemys
 			call hudUpdate
-			call updateGround
+			;call updateGround
+
+			;call incPoints
 			call jumpControl	;check jumping situation of the character
 			call checkUserInput	;Checking if user pressed a key
 
 			ld a, #0xFF
 			call draw_hero		;paint hero on screen
 
-			ld a, #0xFF
-			call drawBox 		;draw testing box
-
-			;======
-			;NUEVO|
-			;======
-			;call shootBullet
-			call shootUpdate
+			;ld a, #0xFF
+			;call drawBox 		;draw testing box
 
 			call cpct_waitVSYNC_asm		;wait till repainting
 			jr _main_bucle
