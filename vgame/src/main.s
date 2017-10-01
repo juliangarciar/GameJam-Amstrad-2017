@@ -30,6 +30,7 @@
 	.include "menu.h.s"
 	.include "shoot.h.s"
 	.include "hero.h.s"
+	.include "enemy.h.s"
 	;==================
 	;;;PRIVATE FUNCIONS
 	;==================
@@ -144,6 +145,7 @@
 			;======
 			;NUEVO|
 			;======
+			call updateEnemys
 			call hudUpdate
 			call updateGround
 			call jumpControl	;check jumping situation of the character
